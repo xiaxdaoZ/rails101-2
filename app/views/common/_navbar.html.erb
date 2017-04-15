@@ -17,10 +17,12 @@
               Hi, <%= current_user.email %>
             </a>
             <ul class="dropdown-menu">
+               <li> <%= link_to("My Groups", account_groups_path) %></li>
+              <li class="diveder"></li>
               <li><%= link_to("退出", destroy_user_session_path, method: :delete) %></li>
             </ul>
           </li>
-          <% end %> 
+          <% end %>
 
       </div>
       <!-- /.navbar-collapse -->
